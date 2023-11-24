@@ -9,6 +9,7 @@ body {
 }
 
 .container {
+  margin: 150px 0;
   text-align: left;
   background-color: #fff;
   border-radius: 8px;
