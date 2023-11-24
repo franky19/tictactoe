@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1 class="title">Tic tac toe game</h1>
+        <form >
+          <div id="container-select">
+            <label for="chooseType">Please Choose Your game</label><br/>
+            <input type="radio" name="chooseGame" value="defaultGame" onclick="getSelectedRadioButtonValue()"> Choose default game
+            <input type="radio" name="chooseGame" value="insertColumn" onclick="getSelectedRadioButtonValue()" checked> insert your number of columns
+          </div>
+          <div id="container-insert">
+            <label for="insertRepeatCell">add your number of  cell</label><br/>
+            <input type="number" id="insertRepeatCell" oninput="updateValue()" value="" />
+            <p id="insertRepeatCell-error" class="error"></p>
+          </div>
+          
+        </form>
+        <div id="board" class="board"></div>
+        <div class="my-button" onclick="ButtonResetGame()">
+          Reset game
+        </div>
+    </div>
+
+  <script src="js/index.js"></script>
+</body>
+</html>
